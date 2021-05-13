@@ -1,0 +1,395 @@
+/********************************************COMMON PROPERTIES********************************************/
+#box1, #box2, #box3, .top-left, .top-right, .bottom-left, .bottom-right {
+	background-color: #111;
+}
+.Edet, .heads, .det, .head, .intro, .ab, .ab1, .abt, .my, .m, .skills{
+	font-family: 'Lato', sans-serif;
+}
+/************************************************IMAGE*****************************************************/
+.img{
+	position: relative;
+	display: inline-block;
+}
+.me{
+	height: 95.5vh;
+	width: 30vw;
+	margin-left:1vw;
+	padding-top: 1vh;
+	
+}
+/*******************************************HIDDEN BOXES ***************************************************/
+#box1, #box2, #box3{
+	position: absolute;
+	top: 1vh;
+	left: 31.5vw;
+	width: 65vw;
+	height:95.5vh;
+	color: white;
+	z-index: 500;
+	visibility: hidden;
+}
+#box2, #box3{
+	padding-left: 1vh;
+}
+.b1, .b2, .b3{
+	background-color: #222;
+	border-style: none;
+	padding-top: 1.8vh;
+}
+.b1:hover, .b2:hover, .b3:hover{
+	background-color: grey;
+	border-style: none;
+}
+.btn{
+	float:right;
+}
+.btn:hover, .btn2:hover
+{
+	border-style: none;
+	background-color: grey;
+}
+.btn2{
+	position: relative;
+	top: 0px;
+	float:right;
+}
+.star{
+	color: #ffb400;
+}
+.sub{
+	font-size: 2vw;
+}
+.heads{
+	color: #ffb400;
+	margin-left:1.5vw;
+	font-weight: bold;
+	font-size: 1.5vw;	
+}
+.Edet{
+	padding-top: 0.5vh;
+	font-size: 1.25vw;
+	font-weight: lighter;
+	margin-left:1.5vw;
+}
+.row {
+  display: flex;
+}
+.pi{
+	color: #ffb400;
+}
+.column1 {
+  padding-top: 4vh;
+  flex: 50%;
+  height: 95.5vh; 
+}
+.details{
+	padding-top: 5vh;
+}
+.det, .deti
+{
+	padding-top: 2vh;
+	font-size: 1.5vw;
+	font-weight: lighter;
+}
+.column2 {
+	padding-top: 15vh;
+  flex: 50%;
+  width: 29vw;
+  height: 95.5vh; 
+}
+.head{
+	color: #ffb400;
+	margin-left:2.5vw;
+	font-weight: bold;
+	font-size: 1.5vw;
+}
+/***********************************************MAIN BOXES****************************************/
+.top-left, .top-right, .bottom-left, .bottom-right{
+    display: inline-block;
+	position: absolute;
+	height: 21vh;
+	width: 30vw;	
+}
+.top-left{
+	left:32.25vw;
+	margin-top: 1vh;
+	top: 0.5vh;		
+}
+.bottom-left{
+	left:32.25vw;
+	top: 49.5vh;	
+}
+.bottom-right{
+	left: 63.5vw;
+	top: 49.5vh;
+}
+.top-right{
+	left: 63.5vw;
+	margin-top: 1vh;
+	top: 0.5vh;
+}
+/* ***********************************TOP-LEFT CONTENT AND TYPING ANIMATION*********************************************/
+.intro{
+  color: white; 
+  line-height: 3;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30vw;
+  animation: type 3s steps(40, end); 
+  padding-top: 10vh;
+}
+.line1{
+	text-align: center;
+	font-size: 2.5vw;
+	color: white;
+	font-weight: 100;
+}
+.line2{
+	text-align: center;
+	font-size: 4vw;
+	color: white;
+	font-weight: 1000;
+}
+.line3{ 
+	text-align: center;
+	font-size: 2.5vw;
+	color: #ffb400;
+	font-weight: 750;
+}
+.blinker{
+  animation: blink 1s infinite;
+}
+@keyframes type{ 
+  from { width: 0; } 
+}  
+@keyframes blink{
+  to{opacity: .0;}
+}
+/******************************************FLIP ANIMATION(TR,BL,BR)****************************************************/
+.flip-box {
+  background-color: transparent;
+  width: 30vw;
+  height: 21vh;
+  perspective: 2000px;
+}
+.flip-box-inner {
+  position: relative;
+  width: 30vw;
+  height: 21vh;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 30vw;
+  height: 45.5vh;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  background-color: #222;
+  color: black;
+}
+.flip-box-back {
+  background-color: #222;
+  color: white;
+  transform: rotateY(180deg);
+  }
+  .ab{
+  	text-align: center;
+  	position: relative;
+	font-size: 3vw;
+	color: white;
+	font-weight: 1000;
+	padding-top: 3vh;
+  }
+  .abt, .my{
+  	text-align: center;
+  	position: relative;
+  	margin-top: 20vh;
+	font-size: 3vw;
+	color: white;
+	font-weight: 1000;
+  }
+  .m, .skills{
+  	text-align: center;
+	font-size: 3vw;
+	color: #ffb400;
+	font-weight: 1000;
+  }
+  .card-text{
+  	font-size: 1vw;
+  }
+.number{
+	padding-top: 2vh;
+	text-align:left;
+	margin-left: 1vw;
+	font-size: 2.5vw;
+	font-weight: 100;
+}
+.mob{
+	margin-left: 1vw;
+	color: #ffb400;
+}
+.mail, .call{
+	color: white;
+	padding-top: 1vh;
+	text-align:left;
+	margin-left: 2vw;
+	font-size: 1.7vw;
+	font-weight: 100;	
+}
+.sm{
+	font-size: 2vw;
+	padding-top: 5vh;
+	color: #ffb400;
+}
+#icons{
+	padding-top: 3vh;
+	letter-spacing: 2vw;
+
+}
+.icons{	
+	font-size: 3vw;	
+}
+/**********************************************MEDIA QUERY*********************************************/
+@media screen and (max-width: 700px)
+{
+ .top-left, .top-right, .bottom-left, .bottom-right {
+ 	left:0%;
+    width:30rem;
+    height: 22rem;
+	position: absolute;
+	margin-top:2rem;
+    padding-left: 0%;
+
+   	}
+	.img{
+	 position:relative;
+	 width:9rem;
+	 left:0rem;
+	 top:2rem;
+	 display: block;
+	 padding-left: 0rem;
+	}
+	.intro{
+		padding-left: 0%;
+		left:0%;
+		width:100%;
+	}
+	.me{
+		padding-left: 0rem;
+		padding-right: 0rem;
+	    height:20rem;
+	    width: 20rem;
+		left:0rem;
+	    border-radius: 100%;
+	    margin-left: 0rem;
+	}
+    #box1, #box2, #box3{
+    	left:0rem;
+        position:absolute;
+        padding-left: 0rem;
+        margin-left: 0rem;
+        top:2rem;
+        width:28rem;
+        display: block;
+    }
+    .column1, .column2{
+    	display: block;
+        width:22rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        left:0rem;
+    }
+    .sub{
+    	font-size: 2rem;
+    }
+    .top-left{
+        top:23.5rem;
+    }
+   .top-right{
+        top:48rem;
+    }
+    .bottom-left{
+        top:73rem;
+    }
+    .bottom-right{
+        top:98rem;
+    }
+    .line1, .line3{
+    	font-size: 1.75rem; 
+    }
+     .top-left,.line1, .line3,.line2 {
+    text-align:left;
+	}
+	.abt, .m{
+	font-size: 2.5rem;
+  }
+    .line2{
+    	font-size: 3.0rem;
+    }
+    
+    .card-text{
+    	font-size: 1rem;
+    }
+     .ab{
+	font-size: 2.5rem;
+	padding-top: 7%;
+  }
+    .det{    
+    	font-size: 2rem;
+    }
+     .head, .Edet, .heads, .deti{    
+    	font-size: 1.3rem;
+    	margin-left:0rem;
+    }
+    .flip-box {
+  width: 30rem;
+  height: 22rem;
+}
+.flip-box-inner {
+  width: 30rem;
+  height: 21rem;
+}
+.flip-box-front, .flip-box-back {
+  width: 30rem;
+  height: 22rem;
+  }
+   .my, .skills{
+	font-size: 2.5rem;
+  }
+.number{
+	padding-top: 2rem;
+	margin-left: 1rem;
+	font-size: 2rem;
+}
+.mob{
+	margin-left: 1rem;
+}
+.mail, .call{
+	padding-top: 1rem;
+	margin-left: 2rem;
+	font-size: 1.5rem;	
+}
+
+.sm{
+	font-size: 2rem;
+	padding-top: 5%;
+}
+#icons{
+	padding-top: 3rem;
+	letter-spacing: 3rem;
+}
+.icons{	
+	font-size: 2.75rem;	
+}
+}
+
