@@ -22,6 +22,10 @@ This is Yash Kashyap from Heritage Institute of Technology Kolkata. I am current
 
 🌱 Java Coder :) 
 
+MY LEETCODE STATS :
+
+![Leetcode Stats](https://leetcard.jacoblin.cool/yashkashyap0605)
+
 📫 I love watching anime and my favorite one is Demon Slayer and AOT. Currently Watching Spy x Family.
 
 📫 Also, football is just love to me and Messi #10 is my favorite.
