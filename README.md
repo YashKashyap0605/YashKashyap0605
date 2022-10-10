@@ -17,12 +17,20 @@ Here are some ideas to get you started:
 
 👋 Hey there!!!
 This is Yash Kashyap from Heritage Institute of Technology Kolkata. I am currently pursuing B.Tech in CSE with graduation year 2023.
+
 🌱 Currently a Web Developer in MERN Stack with 3 projects that you can find in my repo's.
+
 🌱 Java Coder :) 
+
 📫 I love watching anime and my favorite one is Demon Slayer and AOT. Currently Watching Spy x Family.
+
 📫 Also, football is just love to me and Messi #10 is my favorite.
+
 💬 Hope to build new connections. You may contact me on :
+
 ⚡ LinkedIn : https://www.linkedin.com/in/yash-kashyap-863603190/
+
 ⚡ Instagram : https://www.instagram.com/yashkashyap0103/?hl=en
+
 
 ENJOY DEVELOPING!!!!!!!!
